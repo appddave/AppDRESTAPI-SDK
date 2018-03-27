@@ -350,7 +350,7 @@ Application Infrastructure Performance|AAC-App|JVM|Process CPU Burnt (ms/min)
     public static final String TIME_START_TIME="&start-time=";
     public static final String TIME_END_TIME="&end-time=";
     public static final String NO_ROLL_UP="&rollup=false";
-    public static final String XML_OUTPUT="&output=XML'";
+    public static final String XML_OUTPUT="&output=XML";
     
     public static final String EVENT_TYPES="&event-types=";
     public static final String SEVERITIES="&severities=";
