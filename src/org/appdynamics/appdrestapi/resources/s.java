@@ -20,7 +20,7 @@ public class s {
     
     public static final int VERSION_MAJOR=2;
     public static final int VERSION_MINOR=5;
-    public static final int VERSION_BUILD=5;
+    public static final int VERSION_BUILD=6;
     
     
     public static final String RESTAPI_VERSION=new StringBuilder().append(VERSION_MAJOR).append(".").append(VERSION_MINOR).append(".").append(VERSION_BUILD).toString();
