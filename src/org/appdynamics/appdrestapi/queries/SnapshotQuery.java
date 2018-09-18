@@ -39,6 +39,7 @@ public class SnapshotQuery {
         //val.append(s.LAST_15_MINUTES);
         val.append(s.TIME_BETWEEN).append(s.TIME_START_TIME).append(start);
         val.append(s.TIME_END_TIME).append(end);
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
 
         return val.toString();
     }
@@ -52,6 +53,7 @@ public class SnapshotQuery {
         //val.append(s.LAST_15_MINUTES);
         val.append(s.TIME_BETWEEN).append(s.TIME_START_TIME).append(start);
         val.append(s.TIME_END_TIME).append(end);
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
 
         return val.toString();
     }
@@ -67,6 +69,7 @@ public class SnapshotQuery {
         val.append(s.TIME_BETWEEN).append(s.TIME_START_TIME).append(start);
         val.append(s.TIME_END_TIME).append(end);
         val.append(s.SNAPSHOT_NEED_PROPS).append(String.valueOf(needProps));
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
 
         return val.toString();
     }
@@ -81,6 +84,7 @@ public class SnapshotQuery {
         val.append(s.TIME_BETWEEN).append(s.TIME_START_TIME).append(start);
         val.append(s.TIME_END_TIME).append(end);
         val.append(s.SNAPSHOT_NEED_PROPS).append(String.valueOf(needProps));
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
 
         return val.toString();
     }
@@ -99,6 +103,7 @@ public class SnapshotQuery {
         val.append(s.SNAPSHOT_DATA_COLLECTOR_NAME).append(dataCollectorName);
         val.append(s.SNAPSHOT_DATA_COLLECTOR_TYPE).append(QueryEncoder.encode(dataCollectorType));
         val.append(s.SNAPSHOT_DATA_COLLECTOR_VALUE).append(dataCollectorValue);
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
 
         return val.toString();
     }
@@ -116,6 +121,7 @@ public class SnapshotQuery {
         val.append(s.SNAPSHOT_DATA_COLLECTOR_NAME).append(dataCollectorName);
         val.append(s.SNAPSHOT_DATA_COLLECTOR_TYPE).append(QueryEncoder.encode(dataCollectorType));
         val.append(s.SNAPSHOT_DATA_COLLECTOR_VALUE).append(dataCollectorValue);
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
 
         return val.toString();
     }
@@ -131,6 +137,7 @@ public class SnapshotQuery {
         //val.append(s.LAST_15_MINUTES);
         val.append(s.TIME_BETWEEN).append(s.TIME_START_TIME).append(start);
         val.append(s.TIME_END_TIME).append(end);
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
         //val.append(QueryEncoder.encode(requestSnapshots.getParameters()));
 
         return val.toString();
@@ -145,7 +152,7 @@ public class SnapshotQuery {
         //val.append(s.LAST_15_MINUTES);
         val.append(s.TIME_BETWEEN).append(s.TIME_START_TIME).append(start);
         val.append(s.TIME_END_TIME).append(end);
-        
+        val.append(s.SNAPSHOT_MAX_RESULTS).append(s.MAX_RESULT);
 
         return val.toString();
     }

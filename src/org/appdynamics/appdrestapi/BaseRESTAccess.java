@@ -118,6 +118,27 @@ public class BaseRESTAccess {
      * @param username User to execute the query as
      * @param password Password to use with the connection
      * @param account Account name to use with the queries
+     * @param max_results This is the max results that we expect from a query, currently only applies to snapshots.
+     */
+    public BaseRESTAccess(String controllerURL, String port, boolean ssl, String username, String password, String account, int max_results){
+        baseURL=new RESTBaseURL(controllerURL, port, ssl);
+        auth=new RESTAuth(username, password, account, true);
+        R=new RESTExecuter(baseURL.getControllerURL());
+        s.MAX_RESULT = max_results;
+    }
+    
+     /**
+     * <p>
+     * Returns a RESTAccess object that can be used to query the AppDynamics 
+     * controller.
+     * </p>
+     * 
+     * @param controllerURL FQDN of the controller
+     * @param port Port the controller is using
+     * @param ssl Use SSL
+     * @param username User to execute the query as
+     * @param password Password to use with the connection
+     * @param account Account name to use with the queries
      * @param  proxy {@link RESTProxy} Proxy object with needed information
      */
     public BaseRESTAccess(String controllerURL, String port, boolean ssl, String username, String password, String account, RESTProxy proxy){
@@ -125,6 +146,28 @@ public class BaseRESTAccess {
         auth=new RESTAuth(username, password, account, true,proxy);
         R=new RESTExecuter(baseURL.getControllerURL());
         
+    }
+    
+     /**
+     * <p>
+     * Returns a RESTAccess object that can be used to query the AppDynamics 
+     * controller.
+     * </p>
+     * 
+     * @param controllerURL FQDN of the controller
+     * @param port Port the controller is using
+     * @param ssl Use SSL
+     * @param username User to execute the query as
+     * @param password Password to use with the connection
+     * @param account Account name to use with the queries
+     * @param  proxy {@link RESTProxy} Proxy object with needed information
+     * @param max_results This is the max results that we expect from a query, currently only applies to snapshots.
+     */
+    public BaseRESTAccess(String controllerURL, String port, boolean ssl, String username, String password, String account, RESTProxy proxy, int max_results){
+        baseURL=new RESTBaseURL(controllerURL, port, ssl);
+        auth=new RESTAuth(username, password, account, true,proxy);
+        R=new RESTExecuter(baseURL.getControllerURL());
+        s.MAX_RESULT = max_results;
     }
     
     /**

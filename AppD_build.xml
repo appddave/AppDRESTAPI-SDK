@@ -10,7 +10,7 @@
 	<property name="javadoc"            value="${basedir}/javadoc"/>
 
 	<property name="RESTAPI.basename"   	value="AppDRESTAPI-SDK"/>
-	<property name="RESTAPI.version"     	value="2.5.6"/>
+	<property name="RESTAPI.version"     	value="2.5.7"/>
 	<property name="RESTAPI.basename.dev"   value="RESTAPI_dev"/>
 	<property name="RESTAPI.version.dev"    value="2.0.3"/>
 

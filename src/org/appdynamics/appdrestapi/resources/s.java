@@ -17,10 +17,11 @@ public class s {
     public static int detailLevel=0;
     public static double percentageThreshold=0.25;
     public static final int MAX_TRIES=3;
+    public static int MAX_RESULT=600;
     
     public static final int VERSION_MAJOR=2;
     public static final int VERSION_MINOR=5;
-    public static final int VERSION_BUILD=6;
+    public static final int VERSION_BUILD=7;
     
     
     public static final String RESTAPI_VERSION=new StringBuilder().append(VERSION_MAJOR).append(".").append(VERSION_MINOR).append(".").append(VERSION_BUILD).toString();
@@ -364,6 +365,7 @@ Application Infrastructure Performance|AAC-App|JVM|Process CPU Burnt (ms/min)
     public static final String USER_EMAIL="user-email";
     
     //For Snapshot parameters
+    public static final String SNAPSHOT_MAX_RESULTS="&maximum-results=";
     public static final String SNAPSHOT_ARCHIVED="&archived=";
     public static final String SNAPSHOT_DEEP_DIVE_POLICY="&deep-dive-policy=";
     public static final String SNAPSHOT_GUIDS="&guids=";
